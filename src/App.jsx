@@ -45,7 +45,7 @@ function App() {
 
     setLoading(true);
 
-    const response = await fetch("http://127.0.0.1:8000/analyze", {
+    const response = await fetch("http://localhost:8000/analyze", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ function App() {
   };
 
   const compareStartups = async () => {
-    const response = await fetch("http://127.0.0.1:8000/compare", {
+    const response = await fetch("http://localhost:8000/compare", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
